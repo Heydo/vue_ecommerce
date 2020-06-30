@@ -25,3 +25,7 @@ body,
 .el-pagination {
   margin-top: 15px;
 }
+/* 级联选择器下拉框大小 */
+.el-cascader-panel {
+  height: 200px;
+}
