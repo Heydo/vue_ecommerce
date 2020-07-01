@@ -14,6 +14,8 @@ import Rights from '../components/power/Rights.vue'
 import Roles from '../components/power/Roles.vue'
 // 导入商品分类组件
 import Cate from '../components/goods/Cate.vue'
+// 导入分类参数组件
+import Params from '../components/goods/Params.vue'
 
 Vue.use(VueRouter)
 
@@ -48,6 +50,9 @@ const routes = [{
       {
         path: '/categories',
         component: Cate
+      }, {
+        path: '/params',
+        component: Params
       }
     ]
   }

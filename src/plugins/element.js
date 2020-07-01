@@ -34,7 +34,10 @@ import {
   Tree,
   Select,
   Option,
-  Cascader
+  Cascader,
+  Alert,
+  Tabs,
+  TabPane
 } from 'element-ui'
 
 Vue.use(Button)
@@ -64,6 +67,9 @@ Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(TabPane)
+Vue.use(Tabs)
 // 将message进行全局挂载。使得每一个组件都可以通过$this来访问到Message组件。
 Vue.prototype.$message = Message
 // 将MessageBox进行全局挂载。
