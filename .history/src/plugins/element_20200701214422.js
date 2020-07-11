@@ -37,12 +37,7 @@ import {
   Cascader,
   Alert,
   Tabs,
-  TabPane,
-  Steps,
-  Step,
-  CheckboxGroup,
-  Checkbox,
-  Upload
+  TabPane
 } from 'element-ui'
 
 Vue.use(Button)
@@ -75,11 +70,6 @@ Vue.use(Cascader)
 Vue.use(Alert)
 Vue.use(TabPane)
 Vue.use(Tabs)
-Vue.use(Steps)
-Vue.use(Step)
-Vue.use(CheckboxGroup)
-Vue.use(Checkbox)
-Vue.use(Upload)
 // 将message进行全局挂载。使得每一个组件都可以通过$this来访问到Message组件。
 Vue.prototype.$message = Message
 // 将MessageBox进行全局挂载。

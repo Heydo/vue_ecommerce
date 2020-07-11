@@ -15,6 +15,8 @@ import VueQuillEditor from 'vue-quill-editor'
 import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.bubble.css'
+// 将富文本编辑器，注册为全局可用的组件
+Vue.use(VueQuillEditor)
 
 // 导入axios
 import axios from 'axios'
@@ -25,9 +27,6 @@ axios.interceptors.request.use(config => {
   config.headers.Authorization = window.sessionStorage.getItem('token')
   return config
 })
-
-// 将富文本编辑器，注册为全局可用的组件
-Vue.use(VueQuillEditor)
 
 // 创建一个全局的过滤器，解决时间显示不正常的问题
 Vue.filter('dateFormat', function (originVal) {

@@ -19,7 +19,7 @@ import Params from '../components/goods/Params.vue'
 // 导入商品列表组件
 import GoodsList from '../components/goods/List.vue'
 // 导入添加商品组件
-import AddGoods from '../components/goods/Add.vue'
+import AddPage from '../components/goods/Add.ue'
 
 Vue.use(VueRouter)
 
@@ -62,7 +62,7 @@ const routes = [{
         component: GoodsList
       }, {
         path: '/goods/add',
-        component: AddGoods
+        component: Add
       }
     ]
   }

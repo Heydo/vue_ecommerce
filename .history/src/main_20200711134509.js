@@ -9,13 +9,6 @@ import './assets/fonts/iconfont.css'
 // 导入树形表格的插件
 import TreeTable from 'vue-table-with-tree-grid'
 
-// 导入富文本编辑器
-import VueQuillEditor from 'vue-quill-editor'
-// require styles 导入富文本编辑器对应的样式
-import 'quill/dist/quill.core.css'
-import 'quill/dist/quill.snow.css'
-import 'quill/dist/quill.bubble.css'
-
 // 导入axios
 import axios from 'axios'
 // 为axios设置请求的根路径(按照接口文档提供的请求路径来写)
@@ -26,20 +19,17 @@ axios.interceptors.request.use(config => {
   return config
 })
 
-// 将富文本编辑器，注册为全局可用的组件
-Vue.use(VueQuillEditor)
-
 // 创建一个全局的过滤器，解决时间显示不正常的问题
 Vue.filter('dateFormat', function (originVal) {
   // 通过data对象格式化时间
   const dt = new Date(originVal)
   // 获取具体时间数组
   const y = dt.getFullYear()
-  const m = (dt.getMonth() + 1 + '').padStart(2, '0')
-  const d = (dt.getDate() + '').padStart(2, '0')
-  const hh = (dt.getHours() + '').padStart(2, '0')
-  const mm = (dt.getMinutes() + '').padStart(2, '0')
-  const ss = (dt.getSeconds() + '').padStart(2, '0')
+  const m = (dt.getMonth() + 1).padStart(2, '0')
+  const d = (dt.getDate()).padStart(2, '0')
+  const hh = (dt.getHours()).padStart(2, '0')
+  const mm = (dt.getMinutes()).padStart(2, '0')
+  const ss = (dt.getSeconds()).padStart(2, '0')
 
   return `${y}-${m}-${d} ${hh}:${mm}:${ss}`
 })
