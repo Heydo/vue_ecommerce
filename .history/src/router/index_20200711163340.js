@@ -21,7 +21,7 @@ import GoodsList from '../components/goods/List.vue'
 // 导入添加商品组件
 import AddGoods from '../components/goods/Add.vue'
 // 导入订单列表组件
-import Order from '../components/order/order.vue'
+import Order from '../components/order/Order.vue'
 Vue.use(VueRouter)
 
 const routes = [{

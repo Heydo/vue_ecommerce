@@ -45,9 +45,6 @@ import {
   Upload
 } from 'element-ui'
 
-import Timeline from './timeline/index.js'
-import TimelineItem from './timeline-item/index.js'
-
 Vue.use(Button)
 Vue.use(Form)
 Vue.use(FormItem)
@@ -83,9 +80,6 @@ Vue.use(Step)
 Vue.use(CheckboxGroup)
 Vue.use(Checkbox)
 Vue.use(Upload)
-
-Vue.use(Timeline)
-Vue.use(TimelineItem)
 // 将message进行全局挂载。使得每一个组件都可以通过$this来访问到Message组件。
 Vue.prototype.$message = Message
 // 将MessageBox进行全局挂载。
